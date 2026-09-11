@@ -32,9 +32,8 @@ const LeftNav = () => {
 
   return (
     <div
-      className={`w-[240px] md:block overflow-y-auto h-full py-4 bg-black md:bg-white dark:bg-black absolute md:relative z-10  md:translate-x-0 transition-all ${
-        mobileMenu ? "translate-x-0" : "translate-x-[-240px]"
-      }`}
+      className={`w-[240px] md:block overflow-y-auto h-full py-4 bg-black md:bg-white dark:bg-black absolute md:relative z-10  md:translate-x-0 transition-all ${mobileMenu ? "translate-x-0" : "translate-x-[-240px]"
+        }`}
     >
       <div className="md:hidden flex justify-center mb-2">
         <div
@@ -64,11 +63,10 @@ const LeftNav = () => {
                   clickHandler(item.name, item.type);
                   navigate("/");
                 }}
-                className={`${
-                  selectedCategory === item.name
+                className={`${selectedCategory === item.name
                     ? "bg-white/[0.15] md:bg-black/[0.15] dark:bg-white/[0.15]"
                     : ""
-                }`}
+                  }`}
               />
               {item.divider && (
                 <hr className="my-5 border-white/[0.2] md:border-black/[0.2] border dark:border dark:border-white/[0.2]" />
@@ -78,7 +76,7 @@ const LeftNav = () => {
         })}
         <hr className="my-5 border-white/[0.2] md:border-black/[0.2] border dark:border dark:border-white/[0.2]" />
         <div className="text-white/[0.5] md:text-black/[0.7] dark:text-white/[0.5] text-[12px]">
-          Build by VIVEK/AMAN/VAIBHAV/HIMANSHU
+          Build by VIVEK KUMAR
         </div>
       </div>
     </div>
